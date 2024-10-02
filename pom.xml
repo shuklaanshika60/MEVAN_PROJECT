@@ -21,4 +21,12 @@
         </dependency>
     </dependencies>
 
+<distributionManagement>
+    <repository>
+        <id>MEVAN_PROJECT</id>
+        <url>https://github.com/GAURAVETH/MEVAN_PROJECT.git</url>
+    </repository>
+</distributionManagement>
+
+
 </project>
