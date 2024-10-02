@@ -4,25 +4,24 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>MAVEN_PROJECT</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>my-project</artifactId>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
-
-    <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
-
-    <dependencies>
-        <!-- Add your project dependencies here -->
-    </dependencies>
 
     <distributionManagement>
         <repository>
             <id>MEVAN_PROJECT</id>
             <url>https://github.com/GAURAVETH/MEVAN_PROJECT.git</url>
         </repository>
+        <snapshotRepository>
+            <id>MEVAN_PROJECT</id>
+            <url>https://github.com/GAURAVETH/MEVAN_PROJECT.git</url>
+        </snapshotRepository>
     </distributionManagement>
+
+    <dependencies>
+        <!-- Add your dependencies here -->
+    </dependencies>
 
     <build>
         <plugins>
@@ -34,12 +33,6 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
-            </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-deploy-plugin</artifactId>
-                <version>3.1.2</version>
             </plugin>
         </plugins>
     </build>
